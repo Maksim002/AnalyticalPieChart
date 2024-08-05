@@ -49,8 +49,6 @@ Or you can create it programmatically and manually add it to a ViewGroup.
 
 ```java
 val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
-
 view1.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
-
 view1.startAnimation()
 ```
