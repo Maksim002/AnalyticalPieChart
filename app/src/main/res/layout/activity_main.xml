@@ -18,7 +18,7 @@
         app:pieChartTextDescriptionColor="@color/purple_700"
         app:pieChartTextAmountSize="18sp"
         app:pieChartTextDescriptionSize="16sp"
-        app:pieChartTextAmount="Сумма камисии"
+        app:pieChartTextAmount="Сумма комиссии"
         app:pieChartCircleStrokeWidth="15dp"
         app:pieChartCircleSectionSpace="3"/>
 
@@ -39,7 +39,7 @@
             app:pieChartTextDescriptionColor="@color/teal_200"
             app:pieChartTextAmountSize="16sp"
             app:pieChartTextDescriptionSize="14sp"
-            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartTextAmount="Сумма комиссии"
             app:pieChartCircleStrokeWidth="5dp"
             app:pieChartCircleSectionSpace="2"/>
 
@@ -52,7 +52,7 @@
             app:pieChartTextDescriptionColor="@color/black"
             app:pieChartTextAmountSize="12sp"
             app:pieChartTextDescriptionSize="8sp"
-            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartTextAmount="Сумма комиссии"
             app:pieChartCircleStrokeWidth="2dp"
             app:pieChartCircleSectionSpace="1"/>
 
@@ -65,7 +65,7 @@
             app:pieChartTextDescriptionColor="@color/purple_700"
             app:pieChartTextAmountSize="16sp"
             app:pieChartTextDescriptionSize="14sp"
-            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartTextAmount="Сумма комиссии"
             app:pieChartCircleStrokeWidth="5dp"
             app:pieChartCircleSectionSpace="2"/>
     </LinearLayout>
@@ -79,7 +79,7 @@
         app:pieChartTextDescriptionColor="@color/purple_200"
         app:pieChartTextAmountSize="20sp"
         app:pieChartTextDescriptionSize="18sp"
-        app:pieChartTextAmount="Сумма камисии"
+        app:pieChartTextAmount="Сумма комиссии"
         app:pieChartCircleStrokeWidth="18dp"
         app:pieChartCircleSectionSpace="2"/>
 </LinearLayout>
