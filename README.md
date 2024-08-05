@@ -17,7 +17,7 @@ AnalyticalPieChart - это кастомная вью, написанная с �
 ## **Пример GIF**
 ![Пример_1](https://github.com/Maksim002/AnalyticalPieChart/blob/main/imgs/example_1.gif)
 
-You can add the View to your layout.
+Вы можете добавить этот вид в свой макет.
 
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -45,10 +45,12 @@ You can add the View to your layout.
 </LinearLayout>
 ```
 
-Or you can create it programmatically and manually add it to a ViewGroup.
+После программно вызываете в макете и импортируете те данные что вам необходимо отобразить.
 
 ```java
 val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
 view1.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
 view1.startAnimation()
 ```
+
+*Удачи 😇*
