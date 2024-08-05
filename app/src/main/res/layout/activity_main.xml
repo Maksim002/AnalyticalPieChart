@@ -79,6 +79,6 @@
         app:pieChartTextAmountSize="20sp"
         app:pieChartTextDescriptionSize="18sp"
         app:pieChartTextAmount="Сумма комиссии"
-        app:pieChartCircleStrokeWidth="30dp"
-        app:pieChartCircleSectionSpace="3"/>
+        app:pieChartCircleStrokeWidth="20dp"
+        app:pieChartCircleSectionSpace="2.5"/>
 </LinearLayout>
