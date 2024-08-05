@@ -17,6 +17,8 @@ AnalyticalPieChart - это кастомная вью, написанная с �
 ## **Пример GIF**
 ![Пример_1](https://github.com/Maksim002/AnalyticalPieChart/blob/main/imgs/example_1.gif)
 
+You can add the View to your layout.
+
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -42,6 +44,8 @@ AnalyticalPieChart - это кастомная вью, написанная с �
         app:pieChartCircleSectionSpace="3"/>
 </LinearLayout>
 ```
+
+Or you can create it programmatically and manually add it to a ViewGroup.
 
 ```java
 val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
