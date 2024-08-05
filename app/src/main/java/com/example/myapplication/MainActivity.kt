@@ -8,8 +8,6 @@ import com.example.myapplication.customView.AnalyticalPieChart
 
 class MainActivity : AppCompatActivity() {
 
-
-
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
