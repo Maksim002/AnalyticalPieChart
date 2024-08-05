@@ -53,4 +53,4 @@ view.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
 view.startAnimation()
 ```
 
-*Удачи 😇*
+*Удачи!!! 😇*
