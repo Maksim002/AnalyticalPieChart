@@ -14,8 +14,20 @@ AnalyticalPieChart - это кастомная вью, написанная с �
 
 *Примеры, которые многие хотят посмотреть*
 ## **Пример**
-![Пример_1](https://github.com/Alex-tech-it/CustomView_AnalyticalPieChart/raw/master/imgs/1_AnalyticalPieChart.jpg)
-![Пример_1](https://github.com/Alex-tech-it/CustomView_AnalyticalPieChart/raw/master/imgs/2_AnalyticalPieChart.jpg)
+![Пример_1](https://github.com/Alex-tech-it/CustomView_AnalyticalPieChart/raw/master/imgs/exemle_1.jpg)
 
 ## **Пример GIF**
-![Пример_1](https://github.com/Alex-tech-it/CustomView_AnalyticalPieChart/raw/master/imgs/3_AnalyticalPieChartGIF.gif)
+![Пример_1](https://github.com/Alex-tech-it/CustomView_AnalyticalPieChart/raw/master/imgs/exemle_1.gif)
+
+<com.example.myapplication.customView.AnalyticalPieChart
+android:id="@+id/analyticalPieChart_2"
+android:layout_width="150dp"
+android:layout_height="150dp"
+app:pieChartColors="@array/colors"
+app:pieChartTextAmountColor="@color/teal_200"
+app:pieChartTextDescriptionColor="@color/teal_200"
+app:pieChartTextAmountSize="16sp"
+app:pieChartTextDescriptionSize="14sp"
+app:pieChartTextAmount="Сумма камисии"
+app:pieChartCircleStrokeWidth="5dp"
+app:pieChartCircleSectionSpace="2"/>

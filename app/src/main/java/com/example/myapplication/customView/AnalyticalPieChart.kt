@@ -37,7 +37,7 @@ class AnalyticalPieChart @JvmOverloads constructor(
         private const val DEFAULT_MARGIN_SMALL_CIRCLE = 12
 
         /* Процент ширины для отображения круговой диаграммы от общей ширины View */
-        private const val CIRCLE_WIDTH_PERCENT = 0.80
+        private const val CIRCLE_WIDTH_PERCENT = 0.86
 
         /* Базовые значения ширины и высоты View */
         const val DEFAULT_VIEW_SIZE_HEIGHT = 150

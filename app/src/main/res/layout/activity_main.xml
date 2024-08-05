@@ -3,27 +3,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top|center"
+    android:gravity="center"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-<!--    <com.example.myapplication.DoughnutChartView-->
-<!--        android:id="@+id/doughnutChart"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="300dp"-->
-<!--        android:layout_gravity="center"/>-->
 
     <com.example.myapplication.customView.AnalyticalPieChart
         android:id="@+id/analyticalPieChart_1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         app:pieChartColors="@array/colors"
-        app:pieChartTextAmountColor="@color/teal_200"
-        app:pieChartTextDescriptionColor="@color/purple_200"
+        app:pieChartTextAmountColor="@color/purple_700"
+        app:pieChartTextDescriptionColor="@color/purple_700"
         app:pieChartTextAmountSize="18sp"
         app:pieChartTextDescriptionSize="16sp"
         app:pieChartTextAmount="Сумма камисии"
         app:pieChartCircleStrokeWidth="15dp"
-        app:pieChartCircleSectionSpace="3"
-        android:layout_marginTop="12dp"/>
+        app:pieChartCircleSectionSpace="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_gravity="center"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal">
+
+        <com.example.myapplication.customView.AnalyticalPieChart
+            android:id="@+id/analyticalPieChart_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:pieChartColors="@array/colors"
+            app:pieChartTextAmountColor="@color/teal_200"
+            app:pieChartTextDescriptionColor="@color/teal_200"
+            app:pieChartTextAmountSize="16sp"
+            app:pieChartTextDescriptionSize="14sp"
+            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartCircleStrokeWidth="5dp"
+            app:pieChartCircleSectionSpace="2"/>
+
+        <com.example.myapplication.customView.AnalyticalPieChart
+            android:id="@+id/analyticalPieChart_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:pieChartColors="@array/colors"
+            app:pieChartTextAmountColor="@color/black"
+            app:pieChartTextDescriptionColor="@color/black"
+            app:pieChartTextAmountSize="12sp"
+            app:pieChartTextDescriptionSize="8sp"
+            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartCircleStrokeWidth="2dp"
+            app:pieChartCircleSectionSpace="1"/>
+
+        <com.example.myapplication.customView.AnalyticalPieChart
+            android:id="@+id/analyticalPieChart_4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:pieChartColors="@array/colors"
+            app:pieChartTextAmountColor="@color/purple_700"
+            app:pieChartTextDescriptionColor="@color/purple_700"
+            app:pieChartTextAmountSize="16sp"
+            app:pieChartTextDescriptionSize="14sp"
+            app:pieChartTextAmount="Сумма камисии"
+            app:pieChartCircleStrokeWidth="5dp"
+            app:pieChartCircleSectionSpace="2"/>
+    </LinearLayout>
+
+    <com.example.myapplication.customView.AnalyticalPieChart
+        android:id="@+id/analyticalPieChart_5"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        app:pieChartColors="@array/colors"
+        app:pieChartTextAmountColor="@color/purple_200"
+        app:pieChartTextDescriptionColor="@color/purple_200"
+        app:pieChartTextAmountSize="20sp"
+        app:pieChartTextDescriptionSize="18sp"
+        app:pieChartTextAmount="Сумма камисии"
+        app:pieChartCircleStrokeWidth="18dp"
+        app:pieChartCircleSectionSpace="2"/>
 </LinearLayout>

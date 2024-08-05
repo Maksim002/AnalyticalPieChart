@@ -15,22 +15,43 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val view = findViewById<DoughnutChartView>(R.id.doughnutChart)
-//        view.setPercentages(
-//            mapOf(
-//                R.color.purple_200 to 25.0,
-//                R.color.purple_700 to 25.0,
-//                R.color.teal_200 to 25.0,
-//                R.color.black to 25.0
-//            )
-//        )
+        val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
 
-        val view = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
-
-        view.setDataChart(
-            listOf(12, 10, 5), "1000"
+        view1.setDataChart(
+            listOf(12, 10, 5, 30, 18), "1000"
         )
-        view.startAnimation()
+        view1.startAnimation()
+
+
+        val view2 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_2)
+
+        view2.setDataChart(
+            listOf(23, 10, 67, 30, 10), "130"
+        )
+        view2.startAnimation()
+
+
+        val view3 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_3)
+
+        view3.setDataChart(
+            listOf(8, 25, 5, 22, 18), "2800"
+        )
+        view3.startAnimation()
+
+
+        val view4 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_4)
+
+        view4.setDataChart(
+            listOf(8, 25, 5, 22, 18), "2800"
+        )
+        view4.startAnimation()
+
+        val view5 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_5)
+
+        view5.setDataChart(
+            listOf(8, 25, 5, 22, 18, 12, 10, 5, 30, 18), "2800"
+        )
+        view5.startAnimation()
     }
 }
 
