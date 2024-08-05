@@ -1,10 +1,5 @@
 package com.example.myapplication.customView
 
-/**
- * @author Alex-tech-it
- * Github - https://github.com/Alex-tech-it
- */
-
 import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.*

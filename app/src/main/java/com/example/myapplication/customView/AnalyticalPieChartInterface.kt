@@ -1,12 +1,6 @@
 package com.example.myapplication.customView
 
 /**
- * @author Alex-tech-it
- * Github - https://github.com/Alex-tech-it
- */
-
-
-/**
  * Интерфейс для взаимодействия с CustomView AnalyticalPieChart
  */
 interface AnalyticalPieChartInterface {

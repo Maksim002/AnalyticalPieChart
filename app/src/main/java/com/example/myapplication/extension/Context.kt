@@ -1,10 +1,5 @@
 package com.example.myapplication.extension
 
-/**
- * @author Alex-tech-it
- * Github - https://github.com/Alex-tech-it
- */
-
 import android.content.Context
 import android.util.TypedValue
 

@@ -1,10 +1,5 @@
 package com.example.myapplication.model
 
-/**
- * @author Alex-tech-it
- * Github - https://github.com/Alex-tech-it
- */
-
 import android.graphics.Color
 import android.graphics.CornerPathEffect
 import android.graphics.Paint

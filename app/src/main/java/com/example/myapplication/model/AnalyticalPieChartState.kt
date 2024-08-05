@@ -1,11 +1,5 @@
 package com.example.myapplication.model
 
-/**
- * @author Alex-tech-it
- * Github - https://github.com/Alex-tech-it
- */
-
-
 import android.os.Parcelable
 import android.view.View.BaseSavedState
 
