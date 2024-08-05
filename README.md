@@ -16,3 +16,37 @@ AnalyticalPieChart - это кастомная вью, написанная с �
 
 ## **Пример GIF**
 ![Пример_1](https://github.com/Maksim002/AnalyticalPieChart/blob/main/imgs/example_1.gif)
+
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.myapplication.customView.AnalyticalPieChart
+        android:id="@+id/analyticalPieChart_1"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:pieChartColors="@array/colors"
+        app:pieChartTextAmountColor="@color/purple_700"
+        app:pieChartTextDescriptionColor="@color/purple_700"
+        app:pieChartTextAmountSize="18sp"
+        app:pieChartTextDescriptionSize="16sp"
+        app:pieChartTextAmount="Сумма комиссии"
+        app:pieChartCircleStrokeWidth="15dp"
+        app:pieChartCircleSectionSpace="3"/>
+</LinearLayout>
+```
+
+```java
+val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
+
+view1.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
+
+view1.startAnimation()
+```
