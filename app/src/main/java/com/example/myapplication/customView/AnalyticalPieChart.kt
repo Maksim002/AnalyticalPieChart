@@ -32,7 +32,7 @@ class AnalyticalPieChart @JvmOverloads constructor(
         private const val DEFAULT_MARGIN_SMALL_CIRCLE = 12
 
         /* Процент ширины для отображения круговой диаграммы от общей ширины View */
-        private const val CIRCLE_WIDTH_PERCENT = 0.86
+        private const val CIRCLE_WIDTH_PERCENT = 0.45
 
         /* Базовые значения ширины и высоты View */
         const val DEFAULT_VIEW_SIZE_HEIGHT = 150
@@ -44,6 +44,7 @@ class AnalyticalPieChart @JvmOverloads constructor(
     private var marginTextThird: Float = context.dpToPx(DEFAULT_MARGIN_TEXT_3)
     private var marginSmallCircle: Float = context.dpToPx(DEFAULT_MARGIN_SMALL_CIRCLE)
     private val marginText: Float = marginTextFirst + marginTextSecond
+    private val strokeWidthPx = 45f
     private val circleRect = RectF()
     private var circleStrokeWidth: Float = context.dpToPx(6)
     private var circleRadius: Float = 0F
@@ -329,23 +330,23 @@ class AnalyticalPieChart @JvmOverloads constructor(
         }
 
         with(circleRect) {
-            left = circlePadding
-            top = height / 2 - circleRadius
-            right = circleRadius * 2 + circlePadding
-            bottom = height / 2 + circleRadius
+            left = strokeWidthPx
+            top = strokeWidthPx
+            right = width.toFloat() - strokeWidthPx
+            bottom = height.toFloat() - strokeWidthPx
         }
 
-        circleCenterX = (circleRadius * 2 + circlePadding + circlePadding) / 2
+        circleCenterX = (width / 2 + circleRadius + (width / 2 - circleRadius)) / 2
         circleCenterY = (height / 2 + circleRadius + (height / 2 - circleRadius)) / 2
 
-        textAmountY = circleCenterY - 10
+        textAmountY = circleCenterY - marginTextThird / 2
 
         val sizeTextAmountNumber = getWidthOfAmountText(amountForm(totalAmount), amountTextPaint)
 
         textAmountXNumber = circleCenterX - sizeTextAmountNumber.width() / 2
         textAmountXDescription =
             circleCenterX - getWidthOfAmountText(textAmountStr, descriptionTextPain).width() / 2
-        textAmountYDescription = (circleCenterY + sizeTextAmountNumber.height() + marginTextThird) + 10
+        textAmountYDescription = (circleCenterY + sizeTextAmountNumber.height() + marginTextThird) + marginTextThird / 2
     }
 
     /**
@@ -383,5 +384,5 @@ class AnalyticalPieChart @JvmOverloads constructor(
     /**
      * Метод обертки суммы [Rect]
      */
-    private fun amountForm(int: Int) = String.format("%,d", int).replace(',', ' ')
+    private fun amountForm(int: Int) = String.format("%,d", int).replace(',', ' ') + " C"
 }
