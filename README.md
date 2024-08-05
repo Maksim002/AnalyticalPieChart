@@ -31,7 +31,7 @@ AnalyticalPieChart - это кастомная вью, написанная с �
     tools:context=".MainActivity">
 
     <com.example.myapplication.customView.AnalyticalPieChart
-        android:id="@+id/analyticalPieChart_1"
+        android:id="@+id/analyticalPieChart"
         android:layout_width="230dp"
         android:layout_height="230dp"
         app:pieChartColors="@array/colors"
@@ -48,9 +48,9 @@ AnalyticalPieChart - это кастомная вью, написанная с �
 После программно вызываете в макете и импортируете те данные что вам необходимо отобразить.
 
 ```java
-val view1 = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart_1)
-view1.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
-view1.startAnimation()
+val view = findViewById<AnalyticalPieChart>(R.id.analyticalPieChart)
+view.setDataChart(  listOf(12, 10, 5, 30, 18), "1000" )
+view.startAnimation()
 ```
 
 *Удачи 😇*
