@@ -384,5 +384,5 @@ class AnalyticalPieChart @JvmOverloads constructor(
     /**
      * Метод обертки суммы [Rect]
      */
-    private fun amountForm(int: Int) = String.format("%,d", int).replace(',', ' ') + " C"
+    private fun amountForm(int: Int) = String.format("%,d", int).replace(',', ' ')
 }
