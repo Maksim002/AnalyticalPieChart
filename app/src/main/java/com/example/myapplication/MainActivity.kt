@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.customView.AnalyticalPieChart
 
-
 class MainActivity : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId")
